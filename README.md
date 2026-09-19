@@ -5,10 +5,10 @@ One plugin, `uehaj`, so every skill is `/uehaj:<skill>`.
 
 ```sh
 claude plugin marketplace add uehaj/skills     # or: /plugin marketplace add uehaj/skills
-claude plugin install uehaj@uehaj              # or: /plugin install uehaj@uehaj
+claude plugin install uehaj@uehaj-skills       # or: /plugin install uehaj@uehaj-skills
 ```
 
-Update later with `claude plugin marketplace update uehaj`.
+Update later with `claude plugin marketplace update uehaj-skills`.
 
 To install a single skill instead of the whole plugin, use the [skills CLI](https://skills.sh/).
 It copies the skill into `~/.claude/skills/` (with `-g`) or `./.claude/skills/`, and the skill is then
@@ -27,7 +27,7 @@ npx skills add uehaj/skills --skill semgrep -a claude-code -g
 ## Layout
 
 ```
-.claude-plugin/marketplace.json     the catalog (marketplace name: uehaj)
+.claude-plugin/marketplace.json     the catalog (marketplace name: uehaj-skills)
 plugins/uehaj/
   .claude-plugin/plugin.json        the plugin (name: uehaj)
   skills/<skill>/SKILL.md           one folder per skill

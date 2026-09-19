@@ -1,5 +1,5 @@
 {
-  "name": "uehaj",
+  "name": "uehaj-skills",
   "owner": { "name": "Junji UEHARA", "url": "https://github.com/uehaj" },
   "metadata": {
     "description": "uehaj's Claude Code skills. Install the uehaj plugin to get /uehaj:<skill>."
