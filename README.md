@@ -10,6 +10,14 @@ claude plugin install uehaj@uehaj              # or: /plugin install uehaj@uehaj
 
 Update later with `claude plugin marketplace update uehaj`.
 
+To install a single skill instead of the whole plugin, use the [skills CLI](https://skills.sh/).
+It copies the skill into `~/.claude/skills/` (with `-g`) or `./.claude/skills/`, and the skill is then
+invoked without the plugin prefix (`/semgrep` instead of `/uehaj:semgrep`).
+
+```sh
+npx skills add uehaj/skills --skill semgrep -a claude-code -g
+```
+
 ## Skills
 
 | Skill | What it does | Needs |

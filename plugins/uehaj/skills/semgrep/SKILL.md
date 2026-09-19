@@ -1,6 +1,6 @@
 ---
 name: semgrep
-description: 意味で行を探す grep（@uehaj/semgrep）でファイルやディレクトリを探索し、該当行を示す。/uehaj:semgrep <探したい意味> [対象ファイル・ディレクトリ]
+description: 意味で行を探す grep（@uehaj/semgrep）でファイルやディレクトリを探索し、該当行を示す。/uehaj:semgrep <探したい意味> [対象ファイル・ディレクトリ]（skills CLI で入れた場合は /semgrep）
 disable-model-invocation: true
 ---
 
