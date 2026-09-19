@@ -1,0 +1,19 @@
+{
+  "name": "uehaj",
+  "owner": { "name": "Junji UEHARA", "url": "https://github.com/uehaj" },
+  "metadata": {
+    "description": "uehaj's Claude Code skills. Install the uehaj plugin to get /uehaj:<skill>."
+  },
+  "plugins": [
+    {
+      "name": "uehaj",
+      "source": "./plugins/uehaj",
+      "description": "Skills by uehaj: /uehaj:semgrep (grep by meaning, via @uehaj/semgrep)",
+      "version": "0.1.0",
+      "author": { "name": "Junji UEHARA" },
+      "homepage": "https://github.com/uehaj/skills",
+      "license": "MIT",
+      "keywords": ["semgrep", "semantic-search", "grep", "typesafe", "jev"]
+    }
+  ]
+}
