@@ -1,6 +1,6 @@
 ---
 name: semgrep
-description: 意味で行を探す grep（@uehaj/semgrep）でファイルやディレクトリを探索し、該当行を示す。/uehaj:semgrep <探したい意味> [対象ファイル・ディレクトリ]（skills CLI で入れた場合は /semgrep）
+description: 意味で行を探す grep（@uehaj/semgrep）でファイルやディレクトリを探索し、該当行を示す。/uehaj:semgrep <探したい意味> [対象] [semgrep のオプション]（skills CLI で入れた場合は /semgrep）
 disable-model-invocation: true
 ---
 
@@ -17,7 +17,9 @@ API キーは環境変数 `TYPESAFE_API_KEY` か `./.env`、`~/.config/semgrep/.
 
 ## 手順
 
-1. **引数を読む。** `$ARGUMENTS` は「探したい意味」と、あれば「対象」（ファイル、glob、ディレクトリ、または `git log` のようなコマンド出力）。
+1. **引数を読む。** `$ARGUMENTS` は「探したい意味」と、あれば「対象」（ファイル、glob、ディレクトリ、または `git log` のようなコマンド出力）、
+   それに semgrep のオプション。`-` で始まる語（`-r`、`-C 2`、`--level strict`、`-p`、`-c`、`-l` など）とその値は、
+   解釈せずそのまま semgrep に渡す。ユーザーが `-e` / `-a` / `-v` を自分で書いていれば式もそのまま使い、手順 2 は飛ばす。
    対象が無ければ会話の文脈から決め、決められなければ聞く。ディレクトリ全体は行ごとに課金されるので、
    `package-lock.json` や大きな生成物・ログは外し、文書やソースなど意味のあるファイルに絞る。
 2. **意味を式に組む。** 意味は英語で書く（精度が最も安定する。ユーザーが日本語で言っても英訳してよい）。
