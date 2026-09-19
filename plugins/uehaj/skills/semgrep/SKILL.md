@@ -1,7 +1,6 @@
 ---
 name: semgrep
-description: 意味で行を探す grep（@uehaj/semgrep）でファイルやディレクトリを探索し、該当行を示す。/uehaj:semgrep <探したい意味> [対象] [semgrep のオプション]（skills CLI で入れた場合は /semgrep）
-disable-model-invocation: true
+description: 意味で行を探す grep（@uehaj/semgrep）。ユーザーが「〜という意味の行を探して」「〜について書いてある箇所」「〜な問い合わせ／ログ／コミットを抽出」のように、キーワードや正規表現で表せない条件でテキストファイル・ログ・git log から行を探したいときに使う。文字列一致で済む検索は grep で足りるので使わない。/uehaj:semgrep <探したい意味> [対象] [semgrep のオプション]（skills CLI で入れた場合は /semgrep）
 ---
 
 # /uehaj:semgrep — 意味で探す
@@ -17,7 +16,7 @@ API キーは環境変数 `TYPESAFE_API_KEY` か `./.env`、`~/.config/semgrep/.
 
 ## 手順
 
-1. **引数を読む。** `$ARGUMENTS` は「探したい意味」と、あれば「対象」（ファイル、glob、ディレクトリ、または `git log` のようなコマンド出力）、
+1. **引数を読む。** スラッシュコマンドで呼ばれていなければ、直前のユーザー発言を `$ARGUMENTS` とみなす。`$ARGUMENTS` は「探したい意味」と、あれば「対象」（ファイル、glob、ディレクトリ、または `git log` のようなコマンド出力）、
    それに semgrep のオプション。`-` で始まる語（`-r`、`-C 2`、`--level strict`、`-p`、`-c`、`-l` など）とその値は、
    解釈せずそのまま semgrep に渡す。ユーザーが `-e` / `-a` / `-v` を自分で書いていれば式もそのまま使い、手順 2 は飛ばす。
    対象が無ければ会話の文脈から決め、決められなければ聞く。ディレクトリ全体は行ごとに課金されるので、
