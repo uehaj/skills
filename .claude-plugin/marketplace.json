@@ -12,7 +12,7 @@
       "name": "uehaj",
       "source": "./plugins/uehaj",
       "description": "Skills by uehaj: /uehaj:semgrep (grep by meaning, via @uehaj/semgrep)",
-      "version": "0.1.6",
+      "version": "0.1.7",
       "author": {
         "name": "Junji UEHARA"
       },

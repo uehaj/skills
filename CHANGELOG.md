@@ -5,6 +5,12 @@ Changes to the `uehaj` plugin in the `uehaj-skills` marketplace. Versions are th
 
 ## [Unreleased]
 
+## [0.1.7] - 2026-09-20
+
+### Changed
+- `semgrep`: after a match, do not open the whole target (that cancels the saving); read surroundings with `-C N`
+  and only the remaining spots with a `sed -n` line range.
+
 ## [0.1.6] - 2026-09-20
 
 ### Changed
