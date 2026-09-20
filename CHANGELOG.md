@@ -5,6 +5,14 @@ Changes to the `uehaj` plugin in the `uehaj-skills` marketplace. Versions are th
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-09-20
+
+### Changed
+- `semgrep`: back to explicit invocation only (`/uehaj:semgrep` or `/semgrep`); `disable-model-invocation: true`
+  restored and the trigger conditions removed from the description. Evaluation showed the skill adds nothing
+  when Claude picks it for tasks such as whole-codebase comprehension (same accuracy, about 50% more cost),
+  so the user decides when to use it.
+
 ## [0.1.2] - 2026-09-20
 
 ### Changed
