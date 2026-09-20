@@ -5,6 +5,12 @@ Changes to the `uehaj` plugin in the `uehaj-skills` marketplace. Versions are th
 
 ## [Unreleased]
 
+## [0.1.6] - 2026-09-20
+
+### Changed
+- `semgrep`: the first pay-off condition is now stated as "you can expect not to read the whole target after
+  seeing the matches"; extract-lines tasks qualify, comprehension tasks do not.
+
 ## [0.1.5] - 2026-09-20
 
 ### Changed
