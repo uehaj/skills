@@ -5,6 +5,13 @@ Changes to the `uehaj` plugin in the `uehaj-skills` marketplace. Versions are th
 
 ## [Unreleased]
 
+## [0.1.5] - 2026-09-20
+
+### Changed
+- `semgrep`: step 1 now says when semgrep pays off (extract-lines task, vocabulary not greppable, more than a few
+  dozen lines; break-even measured at about 50 lines) and to fall back to direct reading or grep otherwise,
+  saying so in one line.
+
 ## [0.1.4] - 2026-09-20
 
 ### Changed

@@ -1,7 +1,7 @@
 {
   "name": "uehaj",
   "description": "Skills by uehaj. /uehaj:semgrep searches files by meaning with @uehaj/semgrep (TypeSafe Jev).",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": {
     "name": "Junji UEHARA",
     "url": "https://github.com/uehaj"
