@@ -30,8 +30,12 @@ API キーは環境変数 `TYPESAFE_API_KEY` か `./.env`、`~/.config/semgrep/.
 
    ```sh
    semgrep -n -e "customer is asking for a refund" -v "the refund was already issued" tickets/*.txt
-   git log --oneline -200 | semgrep -n -e "the author admits the fix is untested"
+   git log -200 --name-only --format='%x00%h %s %b' | tr '\n' ' ' | tr '\0' '\n' | sed 's/  */ /g; /^ *$/d' \
+     | semgrep -n -e "the author admits the fix is untested"
    ```
+
+   git log は `--oneline` の件名だけだと、件名に書かれていない変更（README の使い方を直したのに件名が
+   「npm パッケージ化」など）を取りこぼす。上のように本文と変更ファイル名まで 1 コミット 1 行に畳んで渡す。
 
 4. **結果を判定する。** 出力の各行を読み、意味に合っていない行が混ざっていれば `-p` を付けて確率を確かめ、
    `--level strict` で再実行する。何も出なければ `--level loose` で再実行し、それでも無ければ「該当なし」と伝える。

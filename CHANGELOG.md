@@ -5,6 +5,13 @@ Changes to the `uehaj` plugin in the `uehaj-skills` marketplace. Versions are th
 
 ## [Unreleased]
 
+## [0.1.4] - 2026-09-20
+
+### Changed
+- `semgrep`: the git log example now folds each commit into one line with subject, body and changed file
+  names (`git log --name-only --format='%x00%h %s %b' | tr ... | semgrep`). Subject lines alone miss commits
+  whose subject does not mention what they changed.
+
 ## [0.1.3] - 2026-09-20
 
 ### Changed
