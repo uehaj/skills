@@ -1,11 +1,11 @@
 {
-  "name": "uehaj-skills",
+  "name": "uehaj-marketplace",
   "owner": {
     "name": "Junji UEHARA",
     "url": "https://github.com/uehaj"
   },
   "metadata": {
-    "description": "uehaj's Claude Code skills. Install the uehaj plugin to get /uehaj:<skill>."
+    "description": "uehaj's Claude Code plugins: skills under /uehaj:<skill>, plus function-hook experiments."
   },
   "plugins": [
     {
@@ -16,7 +16,7 @@
       "author": {
         "name": "Junji UEHARA"
       },
-      "homepage": "https://github.com/uehaj/skills",
+      "homepage": "https://github.com/uehaj/uehaj-marketplace",
       "license": "MIT",
       "keywords": [
         "semgrep",
@@ -24,6 +24,24 @@
         "grep",
         "typesafe",
         "jev"
+      ]
+    },
+    {
+      "name": "playground",
+      "source": "./plugins/playground",
+      "description": "Function-hook experiments that draw in a pane: /img shows a PNG, /mandel draws the Mandelbrot set. Needs CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Junji UEHARA"
+      },
+      "homepage": "https://github.com/uehaj/uehaj-marketplace",
+      "license": "MIT",
+      "keywords": [
+        "function-hooks",
+        "pane",
+        "image",
+        "kitty-graphics",
+        "mandelbrot"
       ]
     }
   ]

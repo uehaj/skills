@@ -1,9 +1,18 @@
 # Changelog
 
-Changes to the `uehaj` plugin in the `uehaj-skills` marketplace. Versions are the plugin version in
-`plugins/uehaj/.claude-plugin/plugin.json` (kept equal to the entry in `.claude-plugin/marketplace.json`).
+Changes to the plugins in the `uehaj-marketplace` marketplace. Versions are the plugin version in
+`plugins/<plugin>/.claude-plugin/plugin.json` (kept equal to the entry in `.claude-plugin/marketplace.json`).
 
 ## [Unreleased]
+
+### Added
+- `playground` 0.1.0: function-hook experiments drawing in a pane. `/img` shows a PNG, `/mandel`
+  draws the Mandelbrot set, both through the terminal surface's `Image` element.
+
+### Changed
+- The marketplace is `uehaj-marketplace` (was `uehaj-skills`) and lives in `uehaj/uehaj-marketplace`
+  (was `uehaj/skills`). Installed plugins carry the marketplace name, so an existing install is
+  re-added: `/plugin marketplace remove uehaj-skills`, then add the new one.
 
 ## [0.1.7] - 2026-09-20
 

@@ -1,0 +1,4 @@
+{
+  "description": "Draws in a Claude Code pane: /img shows a PNG, /mandel draws the Mandelbrot set",
+  "modules": ["./register.tsx"]
+}

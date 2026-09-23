@@ -1,0 +1,19 @@
+{
+  "name": "playground",
+  "description": "Function-hook experiments that draw in a Claude Code pane. /img shows a PNG, /mandel draws the Mandelbrot set.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Junji UEHARA",
+    "url": "https://github.com/uehaj"
+  },
+  "homepage": "https://github.com/uehaj/uehaj-marketplace",
+  "repository": "https://github.com/uehaj/uehaj-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "function-hooks",
+    "pane",
+    "image",
+    "kitty-graphics",
+    "mandelbrot"
+  ]
+}
