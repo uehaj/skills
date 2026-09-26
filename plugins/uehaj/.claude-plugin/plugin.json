@@ -1,7 +1,7 @@
 {
   "name": "uehaj",
-  "description": "Skills by uehaj. /uehaj:semgrep searches files by meaning with @uehaj/semgrep (TypeSafe Jev).",
-  "version": "0.1.7",
+  "description": "Skills by uehaj. /uehaj:sys1grep searches files and git commits by meaning with @uehaj/sys1grep 0.5.0-next.0 (TypeSafe Jev); /uehaj:semgrep is the same with the older @uehaj/semgrep.",
+  "version": "0.2.0",
   "author": {
     "name": "Junji UEHARA",
     "url": "https://github.com/uehaj"
@@ -10,6 +10,7 @@
   "repository": "https://github.com/uehaj/skills",
   "license": "MIT",
   "keywords": [
+    "sys1grep",
     "semgrep",
     "semantic-search",
     "grep"

@@ -6,6 +6,9 @@ Changes to the plugins in the `uehaj-marketplace` marketplace. Versions are the 
 ## [Unreleased]
 
 ### Added
+- `uehaj` 0.2.0: `/uehaj:sys1grep`, beside `/uehaj:semgrep`. It runs `@uehaj/sys1grep@0.5.0-next.0` (the renamed
+  semgrep) through `npx`, and covers what 0.5 adds: `-g` for git commits, and auto-scope by time, language, place,
+  author and git state. It reads the key from `SYS1GREP_API_KEY` or `~/.config/sys1grep/.env`. `/uehaj:semgrep` is unchanged.
 - `playground` 0.1.0: function-hook experiments drawing in a pane. `/img` shows a PNG, `/mandel`
   draws the Mandelbrot set, both through the terminal surface's `Image` element.
 
